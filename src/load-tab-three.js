@@ -1,3 +1,7 @@
-import control from './index.js';
+import * as control from './index.js';
 
-export { };
+let pageThreeLoad = () => {
+  
+}
+
+export { pageThreeLoad } ;

@@ -4,6 +4,239 @@
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+body {
+height: 100%;
+}
+
+main {
+
+}
+
+nav {
+
+}
+
+h1 {
+border-bottom: 2px solid rgb(56, 56, 56);
+}
+
 p {
-  color: red;
+  color: white;
+  font-size: 1em;
+}
+
+#content {
+  height: 100vh;
+  padding: 40px;
+}
+
+body{
+  height: 110vh;
+  background-image: linear-gradient(to bottom right, blue, black, rgb(255, 0, 128))
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0 ;
+  font-size: 1.15em;
+  color: black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 0px solid black;
+  border-left: 2px solid black;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 0, 128);
+  color: white;
+}
+
+button:active{
+  transform: scale(0.9);
+}
+
+.active-tab{
+  background-color: rgb(255, 0, 128);
+  color: white;
+}
+
+.tab {
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.food-section{
+  padding: 20px;
+  margin: 20px 0px;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  display: flex;
+}
+
+.food-section > ul {
+
+}
+
+.food-section > ul > li {
+  gap: 20px;
+  border-bottom: 1px solid rgb(255, 0, 128)
+}
+
+ul > li > span {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.food-name {
+  font-size: 1.25em;
+  align-items: center;
+}
+
+li span.description {
+  background: -webkit-linear-gradient(blue, black, rgb(255, 0, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  flex: 4;
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+li span.price {
+  
+  background: -webkit-linear-gradient(black, rgb(255, 0, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 5px;
+  height: min-content;
+  width: min-content;
+}
+
+#store-locator{
+  min-width: 160px;
+}
+
+.p__h2{
+  font-size: 1.5em;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.px-5{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__5gap {
+  display: flex;
+  gap: 5px;
+}
+
+.flex__10gap {
+  display: flex;
+  gap: 10px;
+}
+
+.flex__20gap {
+  display: flex;
+  gap: 20px;
+}
+
+.flex__40gap {
+  display: flex;
+  gap: 40px;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.full-width{
+  width: 100%;
+}
+
+#contains {
+  border: 2px solid rgb(255, 0, 128);
+  min-width: 376px;
+}
+
+@media screen and (max-width: 458px){
+
+  #content {
+    min-width: 376px;
+  }
+
+  .tab {
+    font-size: 2.4vw;
+  }
+
+  #store-locator{
+    min-width: 120px;
+  }
+
+  #contains {
+    min-width: 300px;
+  }
+
 }

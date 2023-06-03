@@ -1,3 +1,7 @@
-import control from './index.js';
+import * as control from './index.js';
 
-export * as tabTwo from './load-tab-two';
+let pageTwoLoad = () => {
+  
+}
+
+export { pageTwoLoad } ;
