@@ -1,7 +1,13 @@
+import * as control from './index.js';
+
+const pageLoad = () => {
+
 const testAppend = document.createElement('div');
 testAppend.innerHTML = `<p>Hello World</p>`;
 content.appendChild(testAppend);
 
-console.log('Hello World')
+console.log('Hello World');
 
-export * as tabOne from './load-tab-one';
+}
+
+export { pageLoad };
