@@ -9,22 +9,22 @@ appetizers.innerHTML = `
 <ul class="flex__20gap column">
     <li class="grid">
     <span class="food-name"><strong>Spring Rolls</strong></span>
-    <span class="description">Then everything about it that is both interesting and informative</span>
+    <span class="description">Shrimp, pork, carrots, bean sprouts. Wrapped tight and fried light. Served with fish sauce.</span>
     <span class="price">$5.<sup>99</sup></span>
   </li>
     <li class="grid">
     <span class="food-name"><strong>French Onion Soup</strong></span>
-    <span class="description">Then everything about it that is both interesting and informative</span>
+    <span class="description">This dish should really be called French Cheese soup shouldn't it? Either way we promise there is still a melted mountain of onions. Served with toasted rye.</span>
     <span class="price">$6.<sup>99</sup></span>
   </li>
     <li class="grid">
     <span class="food-name"><strong>Calamari</strong></span>
-    <span class="description">Then everything about it that is both interesting and informative</span>
+    <span class="description">You've tried other place's calamari plates... forget the rubber band seafood they pushed on you, this calamari will change your life. Served with fresh lemon.</span>
     <span class="price">$10.<sup>99</sup></span>
   </li>
     <li class="grid">
     <span class="food-name"><strong>Popcorn Shrimp</strong></span>
-    <span class="description">Then everything about it that is both interesting and informative</span>
+    <span class="description">A light snack, but every bite pops with flavour. Served with fresh lemon butter.</span>
     <span class="price">$7.<sup>99</sup></span>
   </li>
 </ul>

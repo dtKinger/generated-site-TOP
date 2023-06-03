@@ -17,6 +17,8 @@ const menu = document.getElementById('menu');
 const about = document.getElementById('about');
 const storeLocator = document.getElementById('store-locator');
 
+
+
 // Generate Nav
 const topNav = nav;
 topNav.innerHTML = `
@@ -28,6 +30,9 @@ topNav.innerHTML = `
 `;
 topNav.classList = 'flex centered row';
 content.prepend(topNav);
+
+// Generate a Restaurant name
+topNav.insertAdjacentHTML('beforebegin', '<h1 class="resto-name">Spicy Amigos</h1>');
 
 // Build a container for whatever tab
 const container = div;
@@ -62,12 +67,8 @@ tabBtns.forEach((tab) => {
   });
 });
 
-
-
 // Make Tab 1 Focused/Active and load it's content
 tabOne.pageOneLoad();
-
-
 
 export { 
   body,

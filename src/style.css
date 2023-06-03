@@ -148,6 +148,22 @@ li span.price {
   margin-bottom: 10px;
 }
 
+.phone {
+  font-size: 1.25em;
+  background: -webkit-linear-gradient(black, rgb(255, 0, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.resto-name {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid rgb(255, 0, 128);
+  text-shadow: 1px 1px 1px rgb(255, 0, 128);
+}
+
 .px-5{
   padding-left: 5px;
   padding-right: 5px;
@@ -233,6 +249,7 @@ li span.price {
   border: 2px solid rgb(255, 0, 128);
   min-width: 376px;
 }
+
 
 @media screen and (max-width: 600px){
   .grid {
