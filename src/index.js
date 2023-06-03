@@ -24,14 +24,14 @@ topNav.innerHTML = `
 <li class="tab"><button class="active-tab" id="menu" ontouchstart="">Menu</button></li>
 <li class="tab"><button class="" id="about" ontouchstart="">About</button></li>
 <li class="tab"><button class="" id="store-locator" ontouchstart="">Store Locator</button></li>
-<ul>
+</ul>
 `;
 topNav.classList = 'flex centered row';
 content.prepend(topNav);
 
 // Build a container for whatever tab
 const container = div;
-container.classList = 'flex centered full-height full-width';
+container.classList = 'flex column centered full-height full-width';
 container.setAttribute('id', 'contains');
 topNav.insertAdjacentElement('afterend', container);
 
@@ -47,7 +47,10 @@ tabBtns.forEach((tab) => {
     if (tab['id'] === e.target['id']){
     tab.classList.add('active-tab');
     };
-    // Load page content based on active tab
+  
+    // Clear Current container
+    container.innerHTML = '';
+    // Load page content into container based on active tab
     if (tab['id'] === 'menu'){
       tabOne.pageOneLoad();
     } else if (tab['id'] === 'about'){
@@ -55,7 +58,6 @@ tabBtns.forEach((tab) => {
     } else if (tab['id'] === 'store-locator'){
       tabThree.pageThreeLoad();
     }
-
 
   });
 });
